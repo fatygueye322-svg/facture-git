@@ -12,5 +12,5 @@ Exécution : java Facture
 
 &#x20;
 
-Exemple initial : 3 articles à 20 dollars donnent 60 dollars.
+Exemple actuel : 3 articles à 20 dollars avec 5 dollars de frais de livraison donnent 65 dollars.
 
