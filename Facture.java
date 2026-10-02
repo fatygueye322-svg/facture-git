@@ -5,7 +5,7 @@ public class Facture {
         int quantite = 3;
         int fraisLivraison = 5;
         int rabais = 10;
-        int total = prixUnitaire * quantite + fraisLivraison;
+        int total = prixUnitaire * quantite + fraisLivraison - rabais;
         System.out.println("Client : " + client);
         System.out.println("Total : " + total + " $");
     }
