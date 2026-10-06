@@ -9,6 +9,7 @@ public class Facture {
         int total = sousTotal + fraisLivraison - rabais;
 
         System.out.println("Client : " + client);
+        System.out.println(quantite + " article(s) à " + prixUnitaire + " $");
         System.out.println("Sous-total : " + sousTotal + " $");
         System.out.println("Total : " + total + " $");
     }
