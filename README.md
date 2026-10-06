@@ -16,3 +16,5 @@ Exemple actuel : 3 articles à 20 dollars avec 5 dollars de frais de livraison d
 
 La facture affiche maintenant la quantité et le prix unitaire des articles.
 
+Pour contribuer, consultez CONTRIBUTING.md.
+
