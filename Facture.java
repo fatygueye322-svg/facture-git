@@ -2,6 +2,7 @@ public class Facture {
     static final int PRIX_UNITAIRE = 20;
     static final int FRAIS_LIVRAISON = 5;
     static final int RABAIS_FIDELITE = 10;
+    static final int SEUIL_LIVRAISON_GRATUITE = 100;
     public static void main(String[] args) {
         String client = "Client démonstration";
         int quantite = 3;
@@ -28,10 +29,13 @@ public class Facture {
     static int calculerSousTotal(int quantite) {
     return PRIX_UNITAIRE * quantite;
 }
-static int calculerFraisLivraison() {
+static int calculerFraisLivraison(int sousTotal) {
+    if (sousTotal >= SEUIL_LIVRAISON_GRATUITE) {
+        return 0;
+    }
     return FRAIS_LIVRAISON;
 }
 static int calculerTotal(int sousTotal) {
-    return sousTotal + calculerFraisLivraison() - RABAIS_FIDELITE;
+    return sousTotal + calculerFraisLivraison(sousTotal) - RABAIS_FIDELITE;
 }
 }
