@@ -15,6 +15,7 @@ public class Facture {
        int quantite2 = 6;
 
       afficherFacture(client2, quantite2);
+      // afficherFacture("Client test", 1);
     }
     
 
@@ -36,6 +37,13 @@ static int calculerFraisLivraison(int sousTotal) {
     return FRAIS_LIVRAISON;
 }
 static int calculerTotal(int sousTotal) {
-    return sousTotal + calculerFraisLivraison(sousTotal) - RABAIS_FIDELITE;
+    int x = sousTotal + calculerFraisLivraison(sousTotal);
+    System.out.println("DEBUG x = " + x);
+    if (sousTotal > 100) {
+        x = x - 15;
+    } else {
+        x = x - RABAIS_FIDELITE;
+    }
+    return x;
 }
 }
