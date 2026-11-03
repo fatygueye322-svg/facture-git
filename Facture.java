@@ -36,13 +36,7 @@ static int calculerFraisLivraison(int sousTotal) {
     return FRAIS_LIVRAISON;
 }
 static int calculerTotal(int sousTotal) {
-    int x = sousTotal + calculerFraisLivraison(sousTotal);
-    System.out.println("DEBUG x = " + x);
-    if (sousTotal > 100) {
-        x = x - 15;
-    } else {
-        x = x - RABAIS_FIDELITE;
-    }
-    return x;
+    int totalAvantRabais = sousTotal + calculerFraisLivraison(sousTotal);
+    return totalAvantRabais - RABAIS_FIDELITE;
 }
 }
