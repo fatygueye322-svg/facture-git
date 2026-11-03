@@ -16,7 +16,7 @@ public class Facture {
         // client 2 (copie du client 1) 
         String c2 = "Client fidèle"; 
         int q2 = 6; 
-        int st2 = 20 * q2; 
+        int st2 = prixUnitaire * q2; 
         int t = st2 + 5 - 10; 
         System.out.println("Client : " + c2); 
         System.out.println(q2 + " article(s) à " + 20 + " $"); 
