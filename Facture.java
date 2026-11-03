@@ -36,6 +36,7 @@ static int calculerFraisLivraison(int sousTotal) {
     return FRAIS_LIVRAISON;
 }
 static int calculerTotal(int sousTotal) {
-    return sousTotal + calculerFraisLivraison(sousTotal) - RABAIS_FIDELITE;
+    int totalAvantRabais = sousTotal + calculerFraisLivraison(sousTotal);
+    return totalAvantRabais - RABAIS_FIDELITE;
 }
 }
