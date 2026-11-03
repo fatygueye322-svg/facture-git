@@ -15,7 +15,6 @@ public class Facture {
        int quantite2 = 6;
 
       afficherFacture(client2, quantite2);
-      // afficherFacture("Client test", 1);
     }
     
 
