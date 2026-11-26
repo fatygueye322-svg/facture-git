@@ -18,3 +18,7 @@ La facture affiche maintenant la quantité et le prix unitaire des articles.
 
 Pour contribuer, consultez CONTRIBUTING.md.
 
+## Construire et lancer
+
+    ./mvnw clean package
+    java -jar target/facture-1.0-SNAPSHOT-jar-with-dependencies.jar
